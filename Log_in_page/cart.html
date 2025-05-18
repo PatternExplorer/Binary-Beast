@@ -1,0 +1,129 @@
+<!-- Add Product Page -->
+<div class="container add-product">
+  <div class="logo">Logo</div>
+  <h2>Add Product</h2>
+  <form>
+    <div class="form-group">
+      <label>Add Product Image</label>
+      <input type="file" />
+    </div>
+    <div class="form-group">
+      <input type="text" placeholder="Product Title" />
+      <input type="text" placeholder="Product Category" />
+      <textarea placeholder="Product Description"></textarea>
+      <input type="number" placeholder="Price" />
+      <input type="number" placeholder="Quantity" />
+      <input type="text" placeholder="Condition" />
+      <input type="text" placeholder="Year of Manufacture" />
+      <input type="text" placeholder="Brand" />
+      <input type="text" placeholder="Model" />
+      <input type="text" placeholder="Dimensions (L x W x H)" />
+      <input type="text" placeholder="Weight" />
+      <input type="text" placeholder="Material" />
+      <input type="text" placeholder="Color" />
+      <label><input type="checkbox" /> Original Packaging</label>
+      <label><input type="checkbox" /> Manual/Instructions Included</label>
+      <textarea placeholder="Working Condition Description"></textarea>
+    </div>
+    <button type="submit" class="btn">Add Item</button>
+  </form>
+</div>
+
+<!-- Cart Page -->
+<div class="container cart-page">
+  <div class="logo">Logo</div>
+  <h2>Cart Page</h2>
+  <div class="cart-items">
+    <div class="cart-item">Item 1</div>
+    <div class="cart-item">Item 2</div>
+    <div class="cart-item">Item 3</div>
+    <div class="cart-item">Item 4</div>
+  </div>
+  <div class="cart-summary">
+    <span>Total price to pay:</span> <strong>Rs. XXXXX</strong>
+  </div>
+  <button class="btn checkout">Checkout</button>
+</div>
+
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  body {
+    background-color: #f9f9f9;
+    padding: 20px;
+  }
+
+  .container {
+    max-width: 500px;
+    margin: 20px auto;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .logo {
+    text-align: right;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+
+  .form-group label {
+    display: block;
+    margin: 10px 0 5px;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .btn:hover {
+    background-color: #45a049;
+  }
+
+  .cart-items {
+    margin-bottom: 20px;
+  }
+
+  .cart-item {
+    background: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+
+  .cart-summary {
+    text-align: right;
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+
+  .checkout {
+    background-color: #ff6600;
+  }
+</style>
