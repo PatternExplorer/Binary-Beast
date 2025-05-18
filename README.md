@@ -23,6 +23,12 @@ Create a foundational prototype of EcoFinds with the following functionalities:
 
 ---
 
+---
+
+## Video Link : [Click Here 👈🔗](https://drive.google.com/file/d/1rWRmV_qcYTYSC_y_9Ht0ESQZ5Jhn0HwZ/view?usp=sharing)
+
+---
+
 ## ✨ Core Features (Round 1)
 
 ### 🔐 User Authentication
