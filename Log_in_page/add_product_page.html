@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoFinds - Add Product & Cart</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: #fff;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: auto;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .logo {
+      font-size: 20px;
+    }
+
+    .cart-icon {
+      position: relative;
+      cursor: pointer;
+    }
+
+    .cart-icon img {
+      width: 30px;
+    }
+
+    .form-section, .cart-section {
+      background-color: #222;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 40px;
+    }
+
+    .form-section h2, .cart-section h2 {
+      margin-bottom: 15px;
+      font-size: 18px;
+      text-align: center;
+    }
+
+    .form-group {
+      margin-bottom: 10px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 14px;
+    }
+
+    .form-group input, .form-group textarea {
+      width: 100%;
+      padding: 8px;
+      border-radius: 5px;
+      border: none;
+      font-size: 14px;
+    }
+
+    .form-group input[type="checkbox"] {
+      width: auto;
+    }
+
+    .form-group.flex {
+      display: flex;
+      gap: 10px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #0a84ff;
+      border: none;
+      border-radius: 8px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .cart-items {
+      margin: 20px 0;
+    }
+
+    .cart-item {
+      background-color: #333;
+      padding: 10px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    .checkout {
+      text-align: center;
+    }
+
+    .total {
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 600px) {
+      .form-group.flex {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">EcoFinds</div>
+      <div class="cart-icon">
+        <img src="cart.svg" alt="Cart">
+      </div>
+    </header>
+
+    <!-- Add Item Page -->
+    <div class="form-section">
+      <h2>Add Product</h2>
+      <div class="form-group">
+        <label>Product Title</label>
+        <input type="text">
+      </div>
+      <div class="form-group">
+        <label>Category</label>
+        <input type="text">
+      </div>
+      <div class="form-group">
+        <label>Description</label>
+        <textarea></textarea>
+      </div>
+      <div class="form-group flex">
+        <div><label>Price</label><input type="number"></div>
+        <div><label>Quantity</label><input type="number"></div>
+      </div>
+      <div class="form-group">
+        <label>Condition</label>
+        <input type="text">
+      </div>
+      <div class="form-group">
+        <label>Year of Manufacture</label>
+        <input type="text">
+      </div>
+      <div class="form-group flex">
+        <div><label>Brand</label><input type="text"></div>
+        <div><label>Model</label><input type="text"></div>
+      </div>
+      <div class="form-group flex">
+        <div><label>Length</label><input type="text"></div>
+        <div><label>Width</label><input type="text"></div>
+        <div><label>Height</label><input type="text"></div>
+      </div>
+      <div class="form-group">
+        <label>Weight</label>
+        <input type="text">
+      </div>
+      <div class="form-group">
+        <label>Material</label>
+        <input type="text">
+      </div>
+      <div class="form-group">
+        <label>Color</label>
+        <input type="text">
+      </div>
+      <div class="form-group">
+        <label><input type="checkbox"> Original Packaging</label>
+      </div>
+      <div class="form-group">
+        <label><input type="checkbox"> Manual/Instructions Included</label>
+      </div>
+      <div class="form-group">
+        <label>Working Condition Description</label>
+        <textarea></textarea>
+      </div>
+      <button>Add Item</button>
+    </div>
+
+    <!-- Cart Page -->
+    <div class="cart-section">
+      <h2>Cart Page</h2>
+      <div class="cart-items">
+        <div class="cart-item">Product 1</div>
+        <div class="cart-item">Product 2</div>
+        <div class="cart-item">Product 3</div>
+        <div class="cart-item">Product 4</div>
+      </div>
+      <div class="checkout">
+        <div class="total">Total Price to Pay: Rs. XXXXX</div>
+        <button>Checkout</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
