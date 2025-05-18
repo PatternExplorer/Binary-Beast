@@ -1,0 +1,101 @@
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.app-title {
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+.search-bar {
+    margin-bottom: 20px;
+}
+
+.category-filter {
+    margin-bottom: 20px;
+}
+
+.category-filter .btn {
+    margin-right: 5px;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product-item {
+    background-color: white;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+    width: calc(33.333% - 20px); /* Three items per row */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.product-item:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    max-height: 150px; /* Set a max height for uniformity */
+    object-fit: cover; /* Ensure the image covers the area */
+}
+
+.product-title {
+    font-size: 16px;
+    margin: 10px 0 5px;
+}
+
+.product-price {
+    font-size: 14px;
+    color: #28a745; /* Green color for price */
+}
+
+.add-product-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    color: white;
+    background-color: #28a745; /* Green color for add button */
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.2s;
+}
+
+.add-product-button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+@media (max-width: 768px) {
+    .product-item {
+        width: calc(50% - 20px); /* Two items per row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .product-item {
+        width: 100%; /* One item per row on very small screens */
+    }
+}
