@@ -5,83 +5,86 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EcoFinds - Add Product & Cart</title>
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
 
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #111;
-      color: #fff;
-      padding: 20px;
-    }
+  body {
+    background-color: #f9f9f9;
+    padding: 20px;
+  }
 
-    .container {
-      max-width: 500px;
-      margin: auto;
-    }
+  .container {
+    max-width: 500px;
+    margin: 20px auto;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
 
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 20px;
-    }
+  .logo {
+    text-align: right;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
 
-    .logo {
-      font-size: 20px;
-    }
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
 
-    .cart-icon {
-      position: relative;
-      cursor: pointer;
-    }
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
 
-    .cart-icon img {
-      width: 30px;
-    }
+  .form-group label {
+    display: block;
+    margin: 10px 0 5px;
+  }
 
-    .form-section, .cart-section {
-      background-color: #222;
-      padding: 20px;
-      border-radius: 10px;
-      margin-bottom: 40px;
-    }
+  .btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
 
-    .form-section h2, .cart-section h2 {
-      margin-bottom: 15px;
-      font-size: 18px;
-      text-align: center;
-    }
+  .btn:hover {
+    background-color: #45a049;
+  }
 
-    .form-group {
-      margin-bottom: 10px;
-    }
+  .cart-items {
+    margin-bottom: 20px;
+  }
 
-    .form-group label {
-      display: block;
-      margin-bottom: 5px;
-      font-size: 14px;
-    }
+  .cart-item {
+    background: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
 
-    .form-group input, .form-group textarea {
-      width: 100%;
-      padding: 8px;
-      border-radius: 5px;
-      border: none;
-      font-size: 14px;
-    }
+  .cart-summary {
+    text-align: right;
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
 
-    .form-group input[type="checkbox"] {
-      width: auto;
-    }
-
-    .form-group.flex {
-      display: flex;
-      gap: 10px;
-    }
+  .checkout {
+    background-color: #ff6600;
+  }
 
     button {
       width: 100%;
@@ -188,21 +191,6 @@
         <textarea></textarea>
       </div>
       <button>Add Item</button>
-    </div>
-
-    <!-- Cart Page -->
-    <div class="cart-section">
-      <h2>Cart Page</h2>
-      <div class="cart-items">
-        <div class="cart-item">Product 1</div>
-        <div class="cart-item">Product 2</div>
-        <div class="cart-item">Product 3</div>
-        <div class="cart-item">Product 4</div>
-      </div>
-      <div class="checkout">
-        <div class="total">Total Price to Pay: Rs. XXXXX</div>
-        <button>Checkout</button>
-      </div>
     </div>
   </div>
 </body>
