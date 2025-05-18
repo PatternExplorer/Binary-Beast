@@ -9,6 +9,16 @@ body {
     padding: 20px;
 }
 
+.logo img {
+    max-width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .logo {
     display: flex;
     align-items: center;
